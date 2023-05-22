@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JAHDIMA</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+    
+    .container {
+      position: relative;
+      height: 100vh;
+      background-image: url("/Users/user/Desktop/jah1/background.jpg");
+      background-size: cover;
+      background-position: center;
+      overflow: hidden;
+    }
+    
+    .icons {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      justify-content: center;
+    }
+    
+    .icon {
+      margin: 30px;
+      width: 100px;
+      height: 100px;
+    }
+    
+    .icon img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+    @media only screen and (max-width: 600px) {
+      /* Styles for screens smaller than 600px */
+      .icon {
+        width: 40px;
+        height: 40px;
+      }
+    }
+    
+    @media only screen and (max-width: 400px) {
+      /* Styles for screens smaller than 400px */
+      .icon {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="icons">
+      <a href="https://t.me/JahWeb">
+        <div class="icon">
+          <img src="/Users/user/Desktop/jah1/telegram.png" alt="Telegram">
+        </div>
+      </a>
+      <a href="https://twitch.com/Jahdima">
+        <div class="icon">
+          <img src="/Users/user/Desktop/jah1/twitch.png" alt="Twitch">
+        </div>
+      </a>
+      <a href="https://youtube.com/@Jahdima">
+        <div class="icon">
+          <img src="/Users/user/Desktop/jah1/youtube.png" alt="Youtube">
+        </div>
+      </a><a href="https://instagram.com/jahdima">
+        <div class="icon">
+          <img src="/Users/user/Desktop/jah1/instagram.png" alt="Instagram">
+        </div>
+      </a><a href="https://soundcloud.com/Jahdima">
+        <div class="icon">
+          <img src="/Users/user/Desktop/jah1/soundcloud.png" alt="Soundcloud">
+        </div>
+      </a>
+      <!-- Add more icons with images here -->
+    </div>
+  </div>
+</body>
+</html>
