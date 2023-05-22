@@ -21,7 +21,7 @@
     
     .icons {
       position: absolute;
-      bottom: 20px;
+      top: 20px;
       left: 50%;
       transform: translateX(-50%);
       display: flex;
@@ -45,9 +45,8 @@
       .icons {
         position: fixed;
         top: 20px;
-        left: 0;
-        right: 0;
-        justify-content: center;
+        left: 50%;
+        transform: translateX(-50%);
       }
       
       .icon {
@@ -57,22 +56,13 @@
       }
     }
     
-    @media only screen and (max-height: 400px) {
-      /* Styles for screens with smaller height (horizontal view on mobile devices) */
-      .container {
-        height: auto;
-      }
-      
+    @media only screen and (orientation: landscape) {
+      /* Styles for landscape orientation */
       .icons {
-        position: absolute;
+        top: unset;
         bottom: 20px;
         left: 50%;
         transform: translateX(-50%);
-        justify-content: center;
-      }
-      
-      .icon {
-        margin: 10px;
       }
     }
   </style>
