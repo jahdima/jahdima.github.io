@@ -13,7 +13,7 @@
     .container {
       position: relative;
       height: 100vh;
-      background-image: url("https://github.com/jahdima/jahdima.github.io/blob/main/background.jpg?raw=true");
+      background-image: url("https://raw.githubusercontent.com/jahdima/jahdima.github.io/main/background.jpg");
       background-size: cover;
       background-position: center;
       overflow: hidden;
@@ -21,17 +21,18 @@
     
     .icons {
       position: absolute;
-      bottom: 20px;
+      top: 20px;
       left: 50%;
       transform: translateX(-50%);
       display: flex;
       justify-content: center;
+      align-items: center;
     }
     
     .icon {
-      margin: 30px;
-      width: 100px;
-      height: 100px;
+      margin: 10px;
+      width: 60px;
+      height: 60px;
     }
     
     .icon img {
@@ -43,9 +44,9 @@
     @media only screen and (max-width: 600px) {
       /* Styles for screens smaller than 600px */
       .icon {
-        width: 60px;
-        height: 60px;
-        margin: 10px;
+        width: 40px;
+        height: 40px;
+        margin: 5px;
       }
     }
     
@@ -58,11 +59,14 @@
       .icons {
         position: static;
         flex-wrap: wrap;
-        justify-content: space-evenly;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        margin-top: 20px;
       }
       
       .icon {
-        margin: 10px;
+        margin: 5px;
       }
     }
   </style>
@@ -72,32 +76,30 @@
     <div class="icons">
       <a href="https://t.me/JahWeb" target="_blank">
         <div class="icon">
-          <img src="https://github.com/jahdima/jahdima.github.io/blob/main/icons/telegram.png?raw=true" alt="Telegram">
+          <img src="https://raw.githubusercontent.com/jahdima/jahdima.github.io/main/icons/telegram.png" alt="Telegram">
         </div>
       </a>
       <a href="https://twitch.com/Jahdima" target="_blank">
         <div class="icon">
-          <img src="https://github.com/jahdima/jahdima.github.io/blob/main/icons/twitch.png?raw=true" alt="Twitch">
+          <img src="https://raw.githubusercontent.com/jahdima/jahdima.github.io/main/icons/twitch.png" alt="Twitch">
         </div>
       </a>
       <a href="https://youtube.com/@Jahdima" target="_blank">
         <div class="icon">
-          <img src="https://github.com/jahdima/jahdima.github.io/blob/main/icons/youtube.png?raw=true" alt="Youtube">
+          <img src="https://raw.githubusercontent.com/jahdima/jahdima.github.io/main/icons/youtube.png" alt="Youtube">
         </div>
       </a>
       <a href="https://instagram.com/jahdima" target="_blank">
         <div class="icon">
-          <img src="https://github.com/jahdima/jahdima.github.io/blob/main/icons/instagram.png?raw=true" alt="Instagram">
+          <img src="https://raw.githubusercontent.com/jahdima/jahdima.github.io/main/icons/instagram.png" alt="Instagram">
         </div>
       </a>
       <a href="https://soundcloud.com/Jahdima" target="_blank">
         <div class="icon">
-          <img src="https://github.com/jahdima/jahdima.github.io/blob/main/icons/soundcloud.png?raw=true" alt="Soundcloud">
+          <img src="https://raw.githubusercontent.com/jahdima/jahdima.github.io/main/icons/soundcloud.png" alt="Soundcloud">
         </div>
       </a>
-      <!-- Add more icons with images here -->
     </div>
   </div>
 </body>
 </html>
-``
