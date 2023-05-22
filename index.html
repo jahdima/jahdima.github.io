@@ -66,6 +66,15 @@
       }
     }
   </style>
+  <script>
+    // JavaScript to redirect to a URL when the background is clicked
+    window.addEventListener('load', function() {
+      var container = document.querySelector('.container');
+      container.addEventListener('click', function() {
+        window.location.href = 'https://google.com'; // Replace with your desired URL
+      });
+    });
+  </script>
 </head>
 <body>
   <div class="container">
