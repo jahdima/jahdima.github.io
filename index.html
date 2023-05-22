@@ -49,12 +49,20 @@
       }
     }
     
-    @media only screen and (max-width: 400px) {
-      /* Styles for screens smaller than 400px */
+    @media only screen and (max-height: 400px) {
+      /* Styles for screens with smaller height (horizontal view on mobile devices) */
+      .container {
+        height: auto;
+      }
+      
+      .icons {
+        position: static;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+      }
+      
       .icon {
-        width: 40px;
-        height: 40px;
-        margin: 5px;
+        margin: 10px;
       }
     }
   </style>
@@ -92,3 +100,4 @@
   </div>
 </body>
 </html>
+``
