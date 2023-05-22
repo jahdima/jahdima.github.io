@@ -21,18 +21,19 @@
     
     .icons {
       position: absolute;
-      bottom: 20px;
+      top: 20px;
       left: 50%;
       transform: translateX(-50%);
       display: flex;
       justify-content: center;
-      align-items: flex-end;
+      align-items: flex-start;
+      flex-wrap: wrap;
     }
     
     .icon {
-      margin: 30px;
-      width: 150px;
-      height: 150px;
+      margin: 20px;
+      width: 100px;
+      height: 100px;
     }
     
     .icon img {
@@ -43,32 +44,14 @@
     
     @media only screen and (max-width: 600px) {
       /* Styles for screens smaller than 600px */
-      .icon {
-        width: 80px;
-        height: 80px;
-        margin: 10px;
-      }
-    }
-    
-    @media only screen and (max-height: 400px) {
-      /* Styles for screens with smaller height (horizontal view on mobile devices) */
-      .container {
-        height: auto;
-      }
-      
       .icons {
-        position: static;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        margin-top: 20px;
+        top: 10px;
       }
       
       .icon {
         margin: 10px;
-        width: 120px;
-        height: 120px;
+        width: 60px;
+        height: 60px;
       }
     }
   </style>
@@ -104,4 +87,4 @@
     </div>
   </div>
 </body>
-</html
+</html>
