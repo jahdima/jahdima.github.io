@@ -26,14 +26,13 @@
       transform: translateX(-50%);
       display: flex;
       justify-content: center;
-      align-items: flex-start;
-      flex-wrap: wrap;
+      align-items: center;
     }
     
     .icon {
-      margin: 20px;
-      width: 100px;
-      height: 100px;
+      margin: 10px;
+      width: 120px;
+      height: 120px;
     }
     
     .icon img {
@@ -44,14 +43,41 @@
     
     @media only screen and (max-width: 600px) {
       /* Styles for screens smaller than 600px */
+      .icon {
+        width: 360px;
+        height: 360px;
+        margin: 10px;
+      }
+    }
+    
+    @media only screen and (min-width: 601px) {
+      /* Styles for screens larger than 600px */
+      .icon {
+        width: 30px;
+        height: 30px;
+        margin: 5px;
+      }
+    }
+    
+    @media only screen and (max-height: 400px) {
+      /* Styles for screens with smaller height (horizontal view on mobile devices) */
+      .container {
+        height: auto;
+      }
+      
       .icons {
-        top: 10px;
+        position: static;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-top: 20px;
       }
       
       .icon {
         margin: 10px;
-        width: 60px;
-        height: 60px;
+        width: 120px;
+        height: 120px;
       }
     }
   </style>
